@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-scroll';
 import { personalInfo, techIcons } from '../data/portfolio';
-import profileImg from '../assets/profile.jpg';
+import profileImg from '../assets/profile.gif';
 
 const socialLinks = [
   { icon: FaGithub, href: personalInfo.github, label: 'GitHub', color: '#fff' },
@@ -197,7 +197,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Socials */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 1 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
@@ -224,7 +224,7 @@ const Hero = () => {
                 <social.icon size={18} />
               </motion.a>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* Right: Profile Image */}

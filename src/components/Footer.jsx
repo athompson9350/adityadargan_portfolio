@@ -37,9 +37,9 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Top section */}
-        <div className="grid md:grid-cols-3 gap-12 mb-14">
+        {/* <div className="grid md:grid-cols-3 gap-12 mb-14"> */}
           {/* Brand */}
-          <div>
+          {/* <div>
             <div className="flex items-center gap-3 mb-5">
               <div
                 className="w-10 h-10 rounded-xl flex items-center justify-center text-xl font-black"
@@ -55,10 +55,10 @@ const Footer = () => {
             <p className="text-gray-400 text-sm leading-relaxed">
               Building intelligent systems at the intersection of AI, machine learning, and software engineering.
             </p>
-          </div>
+          </div> */}
 
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h4 className="text-white font-semibold text-sm mb-5 uppercase tracking-wider">Quick Links</h4>
             <div className="grid grid-cols-2 gap-2">
               {navLinks.map((link) => (
@@ -74,10 +74,10 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Contact */}
-          <div>
+          {/* <div>
             <h4 className="text-white font-semibold text-sm mb-5 uppercase tracking-wider">Contact</h4>
             <div className="space-y-3">
               <a
@@ -96,10 +96,10 @@ const Footer = () => {
                 </svg>
                 Katy, Texas, United States
               </p>
-            </div>
+            </div> */}
 
             {/* Social icons */}
-            <div className="flex items-center gap-3 mt-6">
+            {/* <div className="flex items-center gap-3 mt-6">
               {socials.map((s) => (
                 <motion.a
                   key={s.label}
@@ -120,10 +120,10 @@ const Footer = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Divider */}
-        <div className="h-px mb-7" style={{ background: 'rgba(255,255,255,0.06)' }} />
+        {/* <div className="h-px mb-7" style={{ background: 'rgba(255,255,255,0.06)' }} /> */}
 
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">

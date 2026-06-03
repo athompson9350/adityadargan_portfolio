@@ -92,7 +92,7 @@ const About = () => {
             </div>
 
             {/* Email CTA */}
-            <motion.a
+            {/* <motion.a
               href={`mailto:${personalInfo.email}`}
               whileHover={{ scale: 1.02 }}
               className="mt-6 flex items-center gap-3 glass-card rounded-2xl p-5 group"
@@ -114,7 +114,7 @@ const About = () => {
               <svg className="w-4 h-4 text-gray-500 group-hover:text-primary ml-auto transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-            </motion.a>
+            </motion.a> */}
           </motion.div>
 
           {/* Right: Stats + Visual */}
@@ -126,7 +126,7 @@ const About = () => {
             </div>
 
             {/* Study Info Card */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 1, y: 0 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -151,7 +151,7 @@ const About = () => {
                 <p className="text-gray-400 text-sm">Georgia Institute of Technology</p>
                 <p className="text-primary text-sm font-medium mt-0.5"> 01/2018 – 05/2021</p>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>

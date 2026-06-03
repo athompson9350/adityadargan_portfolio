@@ -30,10 +30,9 @@ const Contact = () => {
   };
 
   const inputCls = (field) =>
-    `w-full px-4 py-3.5 rounded-xl text-white text-sm outline-none transition-all duration-300 font-medium bg-transparent ${
-      focused === field
-        ? 'border-primary shadow-[0_0_0_1px_rgba(68,131,190,0.5),0_0_20px_rgba(68,131,190,0.1)]'
-        : 'border-white/8 hover:border-white/15'
+    `w-full px-4 py-3.5 rounded-xl text-white text-sm outline-none transition-all duration-300 font-medium bg-transparent ${focused === field
+      ? 'border-primary shadow-[0_0_0_1px_rgba(68,131,190,0.5),0_0_20px_rgba(68,131,190,0.1)]'
+      : 'border-white/8 hover:border-white/15'
     }`;
 
   return (
@@ -64,31 +63,16 @@ const Contact = () => {
               </p>
             </div>
 
-            {/* Social Links */}
-            <div className="grid grid-cols-1 gap-3">
-              {socialLinks.map((link, i) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target={link.label !== 'Email' ? '_blank' : undefined}
-                  rel="noopener noreferrer"
-                  className="glass-card rounded-2xl p-4 flex items-center gap-3 group hover:translate-x-1.5 transition-transform duration-200"
-                >
-                  <div
-                    className="w-10 h-10 rounded-xl flex items-center justify-center text-white flex-shrink-0 transition-all duration-300"
-                    style={{ background: 'rgba(255,255,255,0.06)' }}
-                  >
-                    <link.icon size={18} />
-                  </div>
-                  <span className="text-gray-300 text-sm font-medium group-hover:text-white transition-colors">
-                    {link.label}
-                  </span>
-                  <svg className="w-4 h-4 text-gray-600 ml-auto group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </a>
-              ))}
+            {/* Map */}
+            <div className="glass-card rounded-3xl p-7 relative overflow-hidden cursor-pointer" onClick={() => window.open("/photos/map.jpg", "_blank")}>
+              <div
+                className="absolute top-0 left-0 w-full h-1"
+                style={{ background: 'linear-gradient(90deg, #4483BE, #7C3AED, #06B6D4)' }}
+              />
+              <h3 className="text-xl font-bold text-white mb-3">Location</h3>
+              <img src={"/photos/map.jpg"} alt="Map" className="w-full h-auto mb-6 object-cover" />
             </div>
+
           </motion.div>
 
           {/* Right: Form */}
@@ -96,7 +80,7 @@ const Contact = () => {
             initial={{ opacity: 1, x: 0 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="lg:col-span-3"
+            className="lg:col-span-3 flex flex-col gap-6"
           >
             <div className="glass-card rounded-3xl p-8 relative overflow-hidden">
               <div
@@ -189,6 +173,32 @@ const Contact = () => {
                   )}
                 </motion.button>
               </form>
+            </div>
+            {/* Social Links */}
+            {/* <div className="grid grid-cols-1 gap-3"> */}
+            <div className="flex justify-end gap-3">
+              {socialLinks.map((link, i) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.label !== 'Email' ? '_blank' : undefined}
+                  rel="noopener noreferrer"
+                  className="glass-card rounded-2xl p-4 flex items-center gap-3 group hover:translate-x-1.5 transition-transform duration-200"
+                >
+                  {/* <div
+                    className="w-10 h-10 rounded-xl flex items-center justify-center text-white flex-shrink-0 transition-all duration-300"
+                    style={{ background: 'rgba(255,255,255,0.06)' }}
+                  > */}
+                  <link.icon size={18} />
+                  {/* </div> */}
+                  {/* <span className="text-gray-300 text-sm font-medium group-hover:text-white transition-colors">
+                    {link.label}
+                  </span>
+                  <svg className="w-4 h-4 text-gray-600 ml-auto group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg> */}
+                </a>
+              ))}
             </div>
           </motion.div>
         </div>

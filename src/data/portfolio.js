@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Aditya Dargan",
-  title: "Senior AI/ML Engineer | Software Engineer | Generative AI & ML Enthusiast",
+  title: "Senior AI/ML Engineer | Senior Software Engineer | Senior Generative AI & ML Enthusiast",
   intro:
     "Senior AI Systems Engineer specializing in the architecture and deployment of production-grade Generative AI platforms and petabyte-scale distributed systems.",
   about:
@@ -11,14 +11,14 @@ export const personalInfo = {
   // instagram: "https://www.instagram.com/_suraj.rao_",
   // twitter: "https://x.com/SurajGRao020",
   resume:
-    "https://drive.google.com/file/d/1Yi6OBdeUx3uzNTHbabpE9nn5dycKtUGz/view?usp=sharing",
+    "https://drive.google.com/file/d/1Ym4Bxb7493686UZphaWu1qW22gNBcYjB/view?usp=sharing",
 };
 
 export const stats = [
   { label: "Major Projects", value: 5, suffix: "+", icon: "🚀" },
   { label: "Internships / Roles", value: 4, suffix: "+", icon: "💼" },
-  // { label: "CGPA", value: 9.46, suffix: "/10", icon: "🎓", decimals: 2 },
-  // { label: "NITK Hackathon Winner", value: 1, suffix: "st", icon: "🏆" },
+  { label: "CGPA", value: 3.8, suffix: "/4", icon: "🎓", decimals: 2 },
+  { label: "Work Experience", value: 10, suffix: "+ years", icon: "🏆" },
 ];
 
 export const skills = {
@@ -124,9 +124,9 @@ export const experience = [
     company: "Capital One Finacial Corporation",
     period: "09/2018 – 07/2019",
     location: "McLean, VA",
-    color: "#44830E",
+    color: "#4483BE",
     icon: "🎓",
-    logo: "/logos/amazon.png",
+    logo: "/logos/capital.jpg",
     points: [
       "Built a highly distributed, petabyte-scale data validation engine utilizing Scala, Apache Spark, and Amazon EMR, automating schema validation and comprehensive data profiling to ensure flawless accuracy during major cloud migrations.",
       "Designed automated ETL/ELT pipelines to extract, transform, and load highly regulated financial datasets into Snowflake data warehouses, executing complex SQL queries to identify discrepancies and guarantee continuous data integrity.",
@@ -138,9 +138,9 @@ export const experience = [
     company: "Capital One Finacial Corporation",
     period: "05/2017 – 08/2018",
     location: "McLean, VA",
-    color: "#44830E",
+    color: "#7C3AED",
     icon: "🎓",
-    logo: "/logos/amazon.png",
+    logo: "/logos/capital.jpg",
     points: [
       "Enhanced a high-throughput, real-time event processing Java SDK built on Apache Kafka and Hystrix, engineering multi-message consumption and auto-polling features to seamlessly handle over 2 million transactional messages daily.",
       "Prototyped a complex time-series event analysis proof-of-concept utilizing EsperTech and Python, successfully identifying and flagging anomalous customer transactions to preemptively mitigate fraudulent activity.",
@@ -152,9 +152,9 @@ export const experience = [
     company: "Acadian Asset Management LLC",
     period: "06/2016 – 08/2016",
     location: "Boston, MA",
-    color: "#44830E",
+    color: "#06B6D4",
     icon: "🎓",
-    logo: "/logos/amazon.png",
+    logo: "/logos/acadian.jpg",
     points: [
       "Improved efficacy of P/ Evaluation investment signal in developing, emerging, and frontier markets by 2% through refining status quo signal to appropriately address negative earnings and integrating new data vendor. Presented findings to research team at end of summer.",
       "Assisted portfolio manager in starting new research project on multi day transaction costs baed on past holdings. Initial exploration led to realization of underestimation of market impact of past trades.",
@@ -167,7 +167,7 @@ export const experience = [
     location: "Houston, TX",
     color: "#44830E",
     icon: "🎓",
-    logo: "/logos/amazon.png",
+    logo: "/logos/mirarc.png",
     points: [
       "Developed a high-accuracy macroeconomic forecasting model utilizing multi-variate regression analysis, projecting EIA Natural Gas storage volumes based on complex weather, supply, and industrial outage datasets with an error margin of only 27 bcf.",
       "Built a live-streaming, low-latency financial monitoring application using C# and the .NET framework, integrating directly with third-party market APIs to assist portfolio managers in real-time risk evaluation and trade reconciliation.",
@@ -179,9 +179,9 @@ export const experience = [
     company: "Carnegie Mellon University",
     period: "02/2013 – 05/2013",
     location: "Pittsburgh, PA",
-    color: "#44830E",
+    color: "#4483BE",
     icon: "🎓",
-    logo: "/logos/amazon.png",
+    logo: "/logos/CMU.jpg",
     points: [
       "Designed and implemented novel data clustering algorithms utilizing complex linear programming techniques, executing rigorous statistical experiments alongside faculty to evaluate algorithmic efficiency across large-scale, unstructured datasets.",
       "Leveraged Python and foundational machine learning libraries to execute high-performance computational analysis, establishing empirical baselines for data categorization with Professor Avrim Blum and PhD student Pranjal Awasthi.",

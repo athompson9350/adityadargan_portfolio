@@ -65,7 +65,7 @@ const EducationCard = ({ edu, index }) => (
         style={{ background: `radial-gradient(circle at left, ${edu.color}08, transparent 60%)` }}
       />
 
-      <div className="relative z-10 flex flex-wrap items-start justify-between gap-4">
+      <div className="relative z-10 flex flex-col flex-wrap items-start justify-between gap-4">
         <div className="flex items-start gap-4">
           <InstitutionLogo src={edu.logo} name={edu.institution} color={edu.color} />
           <div>
