@@ -85,7 +85,7 @@ const ExperienceCard = ({ exp, index }) => (
                 color: exp.color,
               }}
             >
-              {exp.type}
+              {exp.location}
             </span>
             <span
               className="text-sm text-gray-300 font-medium flex items-center gap-1.5"

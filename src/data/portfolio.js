@@ -2,9 +2,9 @@ export const personalInfo = {
   name: "Aditya Dargan",
   title: "Senior AI/ML Engineer | Software Engineer | Generative AI & ML Enthusiast",
   intro:
-    "Dedicated Computer Science student specializing in Artificial Intelligence and Machine Learning, passionate about building intelligent systems that solve real-world problems across AI and software engineering.",
+    "Senior AI Systems Engineer specializing in the architecture and deployment of production-grade Generative AI platforms and petabyte-scale distributed systems.",
   about:
-    "I have hands-on experience in Machine Learning, Deep Learning, Generative AI, ML and Backend Development. My work spans building fraud detection systems, GenAI-powered knowledge graph applications, and deploying production-ready ML systems. I also have industry experience as a Trainee Software Engineer.",
+    "With a strong foundation in backend engineering and MLOps, I build the infrastructure that makes AI work at an enterprise scale. I focus on architecture and system integration, treating machine learning models as one component of a much larger, complex product ecosystem. My technical expertise centers on building and deploying AI-powered applications—such as scalable RetrievalAugmented Generation (RAG) pipelines and multi-agent LLM systems—rather than solely focusing on isolated model training.",
   email: "adityadargan761@gmail.com",
   github: "https://github.com/",
   linkedin: "https://www.linkedin.com/in/aditya-dargan-38860657/",
@@ -22,95 +22,170 @@ export const stats = [
 ];
 
 export const skills = {
-  "Generative AI Systems": {
+  "Generative AI & Agentic Architecture": {
     icon: "💻",
     color: "#4483BE",
-    items: ["LLMs", "RAG", "Prompt Engineering", "AI Agents (LangGraph, CrewAI)"],
+    items: ["LLMs", "RAG", "Multi-Agent Orchestration", "Prompt Engineering", "Parameter-Efficient Fine-Tuning", "OpenAI API", "Anthropic API", "Cohere API"],
   },
-  "Production AI Engineering": {
+  "Machine Learning & MLOps": {
     icon: "🧩",
     color: "#7C3AED",
     items: [
-      "LLM evaluation", "observability", "guardrails", "latency & cost optimization"
+      "PyTorch", "TensorFlow", "JAX", "ONNX", "Model Serving (NVIDIA Triton, TorchServe, TensorFlow Serving, BentoML, Seldon Core)", "MLflow", "Kubeflow", "Model Interpretability (SHAP, LIME)", "Human Feedback Reinforcement Learning (RLHF)"
     ],
   },
-  "Data & Infrastructure": {
+  "Vector Ecosystems & Data Engineering": {
     icon: "🗄️",
     color: "#06B6D4",
-    items: ["Kafka", "Spark", "BigQuery", "Snowflake", "Vector DBs (Pinecone, Weaviate)"],
+    items: ["Vector Databases", "Apache Spark", "Apache Kafka", "Databricks",
+      "Snowflake", "Amazon Redshift", "Google BigQuery", "Airflow", "Data Wrangling", "ETL/ELT Pipelines"],
   },
-  "Backend Systems": {
+  "Backend & Distributed Systems": {
     icon: "🛠️",
     color: "#10B981",
-    items: ["Python (FastAPI)", "Go", "Microservices", "Node.js", "Event-driven systems"],
+    items: ["Python (FastAPI, Django)", "Go", "TypeScript", "Java", " C/C++", "Event-Driven Architecture",
+      "Microservices", "REST", "GraphQL", "gRPC", "Protobuf", "High-Throughput Asynchronous Programming"],
   },
-  "Cloud & MLOps": {
+  "Cloud Platforms & Infrastructure": {
     icon: "🧠",
     color: "#F59E0B",
     items: [
-      "AWS", "GCP (Vertex AI)", "Kubernetes", "Terraform", "CI/CD"
+      "AWS (Bedrock, EMR, S3, Kinesis, Lambda)", "Google Cloud Platform (Vertex AI, Bigtable)", "Microsoft Azure",
+      "Infrastructure as Code (Terraform, AWS CloudFormation)", "Docker", "Kubernetes", "Helm", "ArgoCD"
     ],
   },
-  "Programming Languages": {
+  "DevSecOps & System Observability": {
     icon: "📚",
     color: "#EC4899",
-    items: ["Python", "Java", "C++", "JavaScript", "C", "TypeScript"],
+    items: ["CI/CD Pipelines (GitHub Actions, GitLab CI/CD, Jenkins)", "Prometheus", "Grafana", "OpenTelemetry", "ELK Stack", "Jaeger",
+      "Splunk", "Datadog", "Security & Privacy Standards"],
   },
 };
 
 export const experience = [
   {
-    role: "Senior AI Systems Engineer (Product / Platform)",
+    role: "Senior Product Manager",
     company: "Ford Motor Company",
-    period: " 2022 – Present",
-    type: "Industry",
+    period: " 02/2024 – Present ",
+    location: "Dearborn, MI",
     color: "#4483BE",
     icon: "💼",
     logo: "/logos/ford.png",
     points: [
-      "Led development of an LLM-powered diagnostic assistant, reducing service advisor handling time by 30% and automating 20% of service triage workflows",
-      "Built multi-agent AI workflows using LangChain to evaluate technician performance, enabling automated scoring and operational insights",
-      "Designed real-time AI data pipelines using Kafka + BigQuery, powering predictive fleet analytics across 100+ enterprise clients",
+      "Spearheaded the 0→1 architecture and launch of an LLM-powered diagnostic assistant (gemini-1.5-flash-001) utilizing React, TypeScript, and Node.js, successfully pre-screening ~20% of dealership service appointments and driving a ~30% reduction in average advisor handle time.",
+      "Architected a multi-agent AI technician evaluation pipeline using LangChain and Python, securely processing conversational telemetry data via GCP Vertex AI to automate performance scoring while strictly adhering to ISO 27701 privacy information management standards.",
+      "Designed scalable RAG architectures integrated with vector databases (Pinecone) and NoSQL stores (Google Cloud Bigtable) to map connected vehicle telemetry into localized context windows, transitioning generic diagnostic outputs into fleet-specific predictive insights.",
     ],
   },
   {
-    role: "Senior MLOps Engineer",
+    role: "Senior Machine Learning Operations Engineer",
     company: "Ford Motor Company",
-    period: "2022 – 2024",
-    type: "Engineering",
+    period: "08/2022 – 02/2024",
+    location: "Dearborn, MI",
     color: "#7C3AED",
     icon: "🔬",
     logo: "/logos/ford.png",
     points: [
-      "Deployed scalable ML infrastructure on GCP, reducing inference latency by 40%",
-      "Built real-time computer vision services ensuring 100% compliance in privacy-sensitive video processing",
-      "Developed Airflow pipelines for multimodal data (LiDAR + vision), accelerating model training cycles",
+      "Designed and deployed a real-time computer vision microservice on Google Cloud Platform (GCP) for automated face and license-plate blurring across massive fleet video streams, achieving 100% regulatory compliance and eliminating manual video reviews.",
+      "Engineered an automated, fault-tolerant Apache Airflow ETL pipeline to ingest and process multimodal sensor logs containing timestamped LiDAR and image data (MCAP files), drastically accelerating PyTorch based 3D object detection training cycles for the autonomous driving program.",
+      "Configured robust MLOps infrastructure utilizing Docker, Kubernetes, and Terraform to containerize and scale deep learning models, reducing model deployment latency by ~40% and ensuring high availability across edge and cloud environments.",
     ],
   },
   {
     role: "Senior Staff Machine Learning Engineer",
-    company: "Palo Alto Networks",
-    period: "2021 – 2022",
-    type: "Engineering",
+    company: "Palo Alto Networks Inc",
+    period: "08/2021 – 07/2022",
+    location: "Santa Clara, CA",
     color: "#06B6D4",
     icon: "🎓",
     logo: "/logos/palo.png",
     points: [
-      "Improved asset discovery accuracy and reduced false positives through feature engineering and ML optimization",
-      "Built scalable microservices for real-time cyber threat detection across global infrastructure",
+      "Optimized supervised machine learning models within the Cortex Xpanse ASM platform, engineering novel data features in Python to significantly reduce false positive attribution rates while maintaining high precision for active asset discovery.",
+      "Researched and integrated unstructured third-party data streams into the asset nomination pipeline, generating a 38% increase in verifiable seed names and domains discovered for benchmark corporate clients.",
+      "Redesigned stateful backend workflows mapping user-based feedback inputs to active learning loops, utilizing MongoDB (NoSQL) to store complex attribution graphs and dynamically update threat intelligence models."
     ],
   },
   {
     role: "Software Engineer",
-    company: "Amazon",
-    period: "2019 – 2021",
-    type: "Engineering",
+    company: "Amazon Inc",
+    period: "07/2019 – 07/2021",
+    location: "New York, NY",
     color: "#44830E",
     icon: "🎓",
     logo: "/logos/amazon.png",
     points: [
-      "Designed petabyte-scale data pipelines supporting royalty systems and analytics",
-      "Built distributed microservices handling high-volume financial and engagement data",
+      "Architected and deployed a petabyte-scale data ingestion pipeline utilizing AWS S3, Amazon Data Firehose, and Elastic Map Reduce (EMR), efficiently processing multi-terabyte daily streams of listening events to drive a highly complex, dynamic royalty calculation model.",
+      "Designed high-throughput microservices using Node.js and AWS SQS for asynchronous message decoupling, ensuring lossless transmission of critical financial and user engagement metrics across distributed subsystems.",
+      "Implemented high-performance, schema-less data storage solutions utilizing Amazon DynamoDB (NoSQL) to serve real-time analytics and financial dashboards to internal stakeholders, reducing query latency to single-digit milliseconds."
+    ],
+  },
+  {
+    role: "Data Engineer",
+    company: "Capital One Finacial Corporation",
+    period: "09/2018 – 07/2019",
+    location: "McLean, VA",
+    color: "#44830E",
+    icon: "🎓",
+    logo: "/logos/amazon.png",
+    points: [
+      "Built a highly distributed, petabyte-scale data validation engine utilizing Scala, Apache Spark, and Amazon EMR, automating schema validation and comprehensive data profiling to ensure flawless accuracy during major cloud migrations.",
+      "Designed automated ETL/ELT pipelines to extract, transform, and load highly regulated financial datasets into Snowflake data warehouses, executing complex SQL queries to identify discrepancies and guarantee continuous data integrity.",
+      "Transitioned legacy batch-processing algorithms to real-time event streams using Change Data Capture (CDC) and AWS Lambda, enabling downstream analytic systems to react instantly to database state changes."
+    ],
+  },
+  {
+    role: "Software Development Engineer",
+    company: "Capital One Finacial Corporation",
+    period: "05/2017 – 08/2018",
+    location: "McLean, VA",
+    color: "#44830E",
+    icon: "🎓",
+    logo: "/logos/amazon.png",
+    points: [
+      "Enhanced a high-throughput, real-time event processing Java SDK built on Apache Kafka and Hystrix, engineering multi-message consumption and auto-polling features to seamlessly handle over 2 million transactional messages daily.",
+      "Prototyped a complex time-series event analysis proof-of-concept utilizing EsperTech and Python, successfully identifying and flagging anomalous customer transactions to preemptively mitigate fraudulent activity.",
+      "Engineered dynamic, interactive data visualization dashboards utilizing React, Vue.js, and Grafana, providing critical business insights into loan specialist activity patterns through responsive, front-end SPA architectures."
+    ],
+  },
+  {
+    role: "Summer Quantitative Investment Researcher",
+    company: "Acadian Asset Management LLC",
+    period: "06/2016 – 08/2016",
+    location: "Boston, MA",
+    color: "#44830E",
+    icon: "🎓",
+    logo: "/logos/amazon.png",
+    points: [
+      "Improved efficacy of P/ Evaluation investment signal in developing, emerging, and frontier markets by 2% through refining status quo signal to appropriately address negative earnings and integrating new data vendor. Presented findings to research team at end of summer.",
+      "Assisted portfolio manager in starting new research project on multi day transaction costs baed on past holdings. Initial exploration led to realization of underestimation of market impact of past trades.",
+    ],
+  },
+  {
+    role: "Summer Engineer",
+    company: "Mirarc Capital Management LLC",
+    period: "06/2014 – 08/2014",
+    location: "Houston, TX",
+    color: "#44830E",
+    icon: "🎓",
+    logo: "/logos/amazon.png",
+    points: [
+      "Developed a high-accuracy macroeconomic forecasting model utilizing multi-variate regression analysis, projecting EIA Natural Gas storage volumes based on complex weather, supply, and industrial outage datasets with an error margin of only 27 bcf.",
+      "Built a live-streaming, low-latency financial monitoring application using C# and the .NET framework, integrating directly with third-party market APIs to assist portfolio managers in real-time risk evaluation and trade reconciliation.",
+      "Validated predictive energy models through rigorous out-of-sample testing methodologies using historical weekly storage data, ensuring algorithmic resilience against volatile commodity market fluctuations."
+    ],
+  },
+  {
+    role: "Research Assistant",
+    company: "Carnegie Mellon University",
+    period: "02/2013 – 05/2013",
+    location: "Pittsburgh, PA",
+    color: "#44830E",
+    icon: "🎓",
+    logo: "/logos/amazon.png",
+    points: [
+      "Designed and implemented novel data clustering algorithms utilizing complex linear programming techniques, executing rigorous statistical experiments alongside faculty to evaluate algorithmic efficiency across large-scale, unstructured datasets.",
+      "Leveraged Python and foundational machine learning libraries to execute high-performance computational analysis, establishing empirical baselines for data categorization with Professor Avrim Blum and PhD student Pranjal Awasthi.",
+      "Co-authored comprehensive technical documentation detailing algorithmic design choices, constraints, and statistical outcomes, demonstrating a rigorous, academic approach to complex problem-solving."
     ],
   },
 ];
@@ -257,7 +332,7 @@ export const education = [
     degree: "Master of Science in Computer Science (Machine Learning)",
     institution: "Georgia Institute of Technology",
     period: "01/2018 – 05/2021",
-    score: "CGPA: 9.46/10",
+    score: "CGPA: 3.78/4",
     icon: "🎓",
     color: "#4483BE",
     logo: "/logos/GIT.jpg",
@@ -266,7 +341,7 @@ export const education = [
     degree: "Bachelor of Science in Computer Science",
     institution: "Carnegie Mellon University",
     period: "08/2012 – 12/2016",
-    score: "94%",
+    score: "CGPA: 3.88/4",
     icon: "📖",
     color: "#7C3AED",
     logo: "/logos/CMU.jpg",
