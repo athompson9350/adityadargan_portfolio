@@ -52,7 +52,7 @@ const Contact = () => {
             className="lg:col-span-2 flex flex-col gap-6"
           >
             {/* Card */}
-            <div className="glass-card rounded-3xl p-7 relative overflow-hidden">
+            {/* <div className="glass-card rounded-3xl p-7 relative overflow-hidden">
               <div
                 className="absolute top-0 left-0 w-full h-1"
                 style={{ background: 'linear-gradient(90deg, #4483BE, #7C3AED, #06B6D4)' }}
@@ -61,17 +61,28 @@ const Contact = () => {
               <p className="text-gray-400 text-sm leading-relaxed">
                 Whether you have a project idea, a research collaboration, or just want to chat about AI/ML and tech — I'd love to hear from you. Great things start with a conversation!
               </p>
-            </div>
+            </div> */}
 
             {/* Map */}
-            <div className="glass-card rounded-3xl p-7 relative overflow-hidden cursor-pointer" onClick={() => window.open("/photos/map.jpg", "_blank")}>
+            {/* <div className="glass-card rounded-3xl p-7 relative overflow-hidden cursor-pointer" onClick={() => window.open("/photos/map.jpg", "_blank")}>
               <div
                 className="absolute top-0 left-0 w-full h-1"
                 style={{ background: 'linear-gradient(90deg, #4483BE, #7C3AED, #06B6D4)' }}
               />
-              <h3 className="text-xl font-bold text-white mb-3">Location</h3>
-              <img src={"/photos/map.jpg"} alt="Map" className="w-full h-auto mb-6 object-cover" />
-            </div>
+              <h3 className="text-xl font-bold text-white mb-3">Location</h3> */}
+            {/* <a
+              href="https://www.google.com/maps/place/Katy,+TX+77494"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/photos/map.png" // your image path
+                alt="Map of Katy, TX 77494"
+                style={{ width: "100%", cursor: "pointer" }}
+              />
+            </a> */}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.025915151223!2d-95.8068919!3d29.7527322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c1f74bac4cfb%3A0x9c1f2e7d44d7c0d!2sKaty%2C%20TX%2077494!5e0!3m2!1sen!2sus!4v1748876529000!5m2!1sen!2sus" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            {/* </div> */}
 
           </motion.div>
 
@@ -175,31 +186,32 @@ const Contact = () => {
               </form>
             </div>
             {/* Social Links */}
-            {/* <div className="grid grid-cols-1 gap-3"> */}
-            <div className="flex justify-end gap-3">
-              {socialLinks.map((link, i) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  target={link.label !== 'Email' ? '_blank' : undefined}
-                  rel="noopener noreferrer"
-                  className="glass-card rounded-2xl p-4 flex items-center gap-3 group hover:translate-x-1.5 transition-transform duration-200"
-                >
-                  {/* <div
-                    className="w-10 h-10 rounded-xl flex items-center justify-center text-white flex-shrink-0 transition-all duration-300"
-                    style={{ background: 'rgba(255,255,255,0.06)' }}
-                  > */}
-                  <link.icon size={18} />
-                  {/* </div> */}
-                  {/* <span className="text-gray-300 text-sm font-medium group-hover:text-white transition-colors">
-                    {link.label}
-                  </span>
-                  <svg className="w-4 h-4 text-gray-600 ml-auto group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg> */}
-                </a>
-              ))}
-            </div>
+            {/* <div className="grid grid-cols-1 gap-3">
+              <div className="flex justify-end gap-3">
+                {socialLinks.map((link, i) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target={link.label !== 'Email' ? '_blank' : undefined}
+                    rel="noopener noreferrer"
+                    className="glass-card rounded-2xl p-4 flex items-center gap-3 group hover:translate-x-1.5 transition-transform duration-200"
+                  >
+                    <div
+                      className="w-10 h-10 rounded-xl flex items-center justify-center text-white flex-shrink-0 transition-all duration-300"
+                      style={{ background: 'rgba(255,255,255,0.06)' }}
+                    >
+                      <link.icon size={18} />
+                    </div>
+                    <span className="text-gray-300 text-sm font-medium group-hover:text-white transition-colors">
+                      {link.label}
+                    </span>
+                    <svg className="w-4 h-4 text-gray-600 ml-auto group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </a>
+                ))}
+              </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

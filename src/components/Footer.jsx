@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaInstagram, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaHeart, FaEnvelope } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-scroll';
 import { personalInfo } from '../data/portfolio';
@@ -18,13 +18,14 @@ const navLinks = [
 const socials = [
   { icon: FaGithub, href: personalInfo.github, label: 'GitHub' },
   { icon: FaLinkedin, href: personalInfo.linkedin, label: 'LinkedIn' },
+  { icon: FaEnvelope, href: "mailto:" + personalInfo.email, label: 'Gmail' },
   // { icon: FaXTwitter, href: personalInfo.twitter, label: 'X' },
   // { icon: FaInstagram, href: personalInfo.instagram, label: 'Instagram' },
 ];
 
 const Footer = () => {
   return (
-    <footer className="relative pt-20 pb-10 overflow-hidden">
+    <footer className="relative pt-10 pb-10 overflow-hidden">
       {/* Top border */}
       <div
         className="absolute top-0 left-0 right-0 h-px"
@@ -98,28 +99,8 @@ const Footer = () => {
               </p>
             </div> */}
 
-            {/* Social icons */}
-            {/* <div className="flex items-center gap-3 mt-6">
-              {socials.map((s) => (
-                <motion.a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                  whileHover={{ scale: 1.2, y: -3 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="w-9 h-9 rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300"
-                  style={{
-                    background: 'rgba(255,255,255,0.05)',
-                    border: '1px solid rgba(255,255,255,0.08)',
-                  }}
-                >
-                  <s.icon size={16} />
-                </motion.a>
-              ))}
-            </div>
-          </div>
+            
+          {/* </div>
         </div> */}
 
         {/* Divider */}
@@ -134,6 +115,27 @@ const Footer = () => {
           <p className="text-gray-600 text-xs">
             Crafted with React · Tailwind · Framer Motion
           </p>
+          {/* Social icons */}
+          <div className="flex items-center gap-3 mt-6">
+              {socials.map((s) => (
+                <motion.a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  whileHover={{ scale: 1.2, y: -3 }}
+                  whileTap={{ scale: 0.9 }}
+                  // className="w-9 h-9 rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300"
+                  // style={{
+                  //   background: 'rgba(255,255,255,0.05)',
+                  //   border: '1px solid rgba(255,255,255,0.08)',
+                  // }}
+                >
+                  <s.icon size={16} />
+                </motion.a>
+              ))}
+            </div>
         </div>
       </div>
     </footer>
